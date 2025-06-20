@@ -11,8 +11,8 @@ export default function Home() {
   }, []);
 
   return (
-    <div className='w-screen h-screen flex align-center justify-center'>
-      <script
+    <div className='w-screen h-screen flex align-center justify-center' dangerouslySetInnerHTML={{
+      __html: `<script
         async
         src='https://telegram.org/js/telegram-widget.js?22'
         data-telegram-login='Hugo_ovo_bot'
@@ -20,7 +20,8 @@ export default function Home() {
         data-userpic='false'
         data-onauth='onTelegramAuth(user)'
         data-request-access='write'
-      ></script>
+      ></script>`
+    }}>
     </div>
   )
 }
