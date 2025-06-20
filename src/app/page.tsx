@@ -11,7 +11,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className='w-screen h-screen flex align-center justify-center' dangerouslySetInnerHTML={{
+    <div className='w-screen h-screen flex align-center justify-center aa' dangerouslySetInnerHTML={{
       __html: `<script
         async
         src='https://telegram.org/js/telegram-widget.js?22'
