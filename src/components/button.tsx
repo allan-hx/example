@@ -10,7 +10,7 @@ export default function Button() {
       origin: 'https://example-nine-beige.vercel.app',
       embed: '1',
       request_access: 'write',
-      return_to: 'https://example-nine-beige.vercel.app/',
+      return_to: 'https://example-nine-beige.vercel.app',
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
       onAuthCallback(data: any) {
         console.log('data:', data);
