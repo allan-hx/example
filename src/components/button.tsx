@@ -7,10 +7,10 @@ export default function Button() {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (window as any).Telegram.Login.auth({
       bot_id: '547043436',
-      origin: 'https://example-nine-beige.vercel.app',
+      origin: 'https://core.telegram.org',
       embed: '1',
       request_access: 'write',
-      return_to: 'https://example-nine-beige.vercel.app',
+      return_to: 'https://core.telegram.org/widgets/login',
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
       onAuthCallback(data: any) {
         console.log('data:', data);
