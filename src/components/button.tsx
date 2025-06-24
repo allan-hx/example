@@ -11,14 +11,14 @@ export default function Button() {
       origin: 'https://example-eosin.vercel.app',
       embed: '1',
       request_access: 'write',
-      return_to: 'https://example-eosin.vercel.app/',
+      return_to: 'https://example-eosin.vercel.app/login',
     });
   }, []);
 
   return (
     <>
       <button className='button' onClick={onLogin}>Login</button>
-      <Script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="HugoLoginBot" data-size="large" data-auth-url="aaaaaaaa.com" data-request-access="write"></Script>
+      <Script  src="/telegram.js" ></Script>
     </>
   );
 }
