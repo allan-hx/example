@@ -1,3 +1,4 @@
+import Script from "next/script";
 import { useCallback } from "react";
 
 export default function Button() {
@@ -15,7 +16,7 @@ export default function Button() {
   return (
     <>
       <button className='button' onClick={onLogin}>Login</button>
-      <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="Hugo_Web_Test_Bot" data-size="medium" data-userpic="false" data-auth-url="allan-hx" data-request-access="write"></script>
+      <Script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="Hugo_Web_Test_Bot" data-size="medium" data-userpic="false" data-auth-url="allan-hx" data-request-access="write"></Script>
     </>
   );
 }
