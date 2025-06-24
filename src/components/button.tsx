@@ -7,7 +7,7 @@ export default function Button() {
   const onLogin = useCallback(() => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (window as any).Telegram.Login.auth({
-      bot_id: '547043436',
+      bot_id: '7560097186',
       origin: 'https://example-eosin.vercel.app',
       embed: '1',
       request_access: 'write',
@@ -18,7 +18,7 @@ export default function Button() {
   return (
     <>
       <button className='button' onClick={onLogin}>Login</button>
-      <Script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="Hugo_Web_Test_Bot" data-size="medium" data-userpic="false" data-auth-url="allan-hx" data-request-access="write"></Script>
+      <Script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="HugoLoginBot" data-size="large" data-auth-url="aaaaaaaa.com" data-request-access="write"></Script>
     </>
   );
 }
